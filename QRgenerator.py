@@ -17,7 +17,8 @@ qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
 
-filename = input("Now let me know what you would like to name the file, remember that it must end with .png")
+filename = input("Now let me know what you would like to name the file, remember that it must end with .png: /n")
+print("Your QR code is saved as %s" % filename)
 img.save(filename)
 
 print("Done!")
